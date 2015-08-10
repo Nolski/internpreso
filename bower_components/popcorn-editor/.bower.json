@@ -1,0 +1,34 @@
+{
+  "name": "popcorn-editor",
+  "version": "0.0.1",
+  "homepage": "https://github.com/Nolski/popcorn-editor",
+  "authors": [
+    "Mike Nolan <me@nolski.rocks>"
+  ],
+  "description": "Fork of Webmaker's Popcorn Editor for local use",
+  "main": "PopcornEditor/src/PopcornEditor.js",
+  "keywords": [
+    "popcorn",
+    "video",
+    "editor",
+    "webmaker"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "0.0.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.0.1",
+    "commit": "0b3f9749b1e440f00cd8eaa3e61c4d2a28e06877"
+  },
+  "_source": "git://github.com/Nolski/popcorn-editor.git",
+  "_target": "~0.0.1",
+  "_originalSource": "popcorn-editor",
+  "_direct": true
+}

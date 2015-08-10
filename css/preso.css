@@ -31,3 +31,7 @@ body {
   background: #7C98B0 !important;
   padding: 40px !important;
 }
+
+#editor > iframe {
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}

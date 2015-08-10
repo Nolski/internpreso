@@ -13,7 +13,7 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
-    <link href='http://fonts.googleapis.com/css?family=Fira+Sans:400,300,700italic,500italic,700,500,400italic,300italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="//code.cdn.mozilla.net/fonts/fira.css">
     <link href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css" rel="stylesheet" />
 
 		<link rel="stylesheet" href="css/reveal.css">
@@ -39,8 +39,6 @@
 	</head>
 
 	<body>
-    <a href="/en-US/" id="tabzilla">mozilla</a>
-
 		<div class="reveal">
 
 			<!-- Any section element inside of this container is displayed as a slide -->
@@ -71,6 +69,10 @@
           <img src="img/small.gif" alt="An example of Popcorn Maker UI"/>
           <aside class="notes">So the first thing that popped into my head was this project right here. This is Popcorn Maker, a Mozilla Foundation project that was part of our WebMaker project. It used this javascript library called popcorn.js to mix and edit videos on the web by streaming videos from different sources like youtube or vimeo and had this nifty editor interface to change how the videos were played.</aside>
 				</section>
+
+        <section>
+          <div id="editor" style="height: 600px;"></div>
+        </section>
 
 				<section>
           <img src="img/popcornjs.png" class="popcorn-logo" alt="Popcorn.js logo"/>
@@ -143,7 +145,7 @@
         </section>
 
         <section>
-          <h1>WMF and Internet Archive</h1>
+          <img src="img/superbuddies.png" style="border:none; box-shadow:none; width: 400px;" alt="Example of an airmozilla edit video page">
           <aside class="notes">So all of the editor and air mozilla stuff was pretty awesome, but there was another side to my internship here that I haven't really talked about yet. A lot of the work that I have done for air mozilla with editing videos on the web and transcoding them into flat video files is also a big want of other popular websites on the net such as Wikipedia and Internet Archive. Seeing as how Popcorn Maker is being sunset, Ben W. at the Mozilla foundation has been looking for someone to help carry on the torch and we have received a lot of interest from WMF about having the ability to edit video. There has already been work done by WMF and Internet archive to have a collaboritive video editing space and rendering server that outputs the files to Wiki Commons and IA, and I spent a lot of time discussing with them how we can integrate this new modular web based editing UI into that.</aside>
         </section>
 
@@ -182,6 +184,9 @@
 			});
 
 		</script>
-    <script src="//mozorg.cdn.mozilla.net/tabzilla/tabzilla.js"></script>
+    <script src="bower_components/popcorn-editor/PopcornEditor/src/PopcornEditor.js"></script>
+    <script>
+    PopcornEditor.init('editor', '/bower_components/popcorn-editor/PopcornEditor/editor.html');
+    </script>
 	</body>
 </html>
